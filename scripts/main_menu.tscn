@@ -1,0 +1,59 @@
+[gd_scene format=3 uid="uid://c22yrf44px843"]
+
+[ext_resource type="Script" uid="uid://cq7hj8atd5tmm" path="res://scripts/main_menu.gd" id="1_brnl1"]
+[ext_resource type="Texture2D" uid="uid://cqqrwq4ffmytt" path="res://assets/background/BG.webp" id="2_lyibd"]
+[ext_resource type="FontFile" uid="uid://dekue7ag4y7a6" path="res://assets/label/PixelOperator8-Bold.ttf" id="2_qqsp2"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_s0eyo"]
+font = ExtResource("2_qqsp2")
+font_size = 42
+font_color = Color(0.59074706, 0.22943029, 0.22479722, 1)
+outline_color = Color(9.5895186e-05, 2.8201613e-10, 0.0023727294, 1)
+
+[node name="MainMenu" type="Control" unique_id=1073578026]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_brnl1")
+
+[node name="ColorRect" type="TextureRect" parent="." unique_id=610816234]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("2_lyibd")
+stretch_mode = 2
+
+[node name="Label" type="Label" parent="." unique_id=146758523]
+layout_mode = 0
+offset_right = 530.0
+offset_bottom = 150.0
+text = "             
+
+				DOUBLE WORLDS"
+label_settings = SubResource("LabelSettings_s0eyo")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="PLAY" type="Button" parent="." unique_id=570091196]
+layout_mode = 0
+offset_left = 500.0
+offset_top = 300.0
+offset_right = 780.0
+offset_bottom = 370.0
+text = "PLAY
+"
+
+[node name="QUIT" type="Button" parent="." unique_id=1059570700]
+layout_mode = 0
+offset_left = 500.0
+offset_top = 400.0
+offset_right = 780.0
+offset_bottom = 470.0
+text = "QUIT"
